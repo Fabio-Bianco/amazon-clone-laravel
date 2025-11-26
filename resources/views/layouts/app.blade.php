@@ -12,9 +12,59 @@
 </head>
 
 <body>
+    <!-- Mobile Sidebar Menu -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-header-icon">👤</div>
+            <span class="sidebar-header-text">Ciao, Bot</span>
+            <button class="sidebar-close" id="sidebarClose">×</button>
+        </div>
+        
+        <div class="sidebar-content">
+            <div class="sidebar-section">
+                <h3 class="sidebar-section-title">Categorie Amazon</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#"><span class="menu-icon">📱</span>Elettronica<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">💻</span>Computer<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">👕</span>Moda<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">🏠</span>Casa e Cucina<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">📚</span>Libri<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">🎮</span>Videogiochi<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">⚽</span>Sport e Tempo Libero<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">🎵</span>CD e Vinili<span class="menu-arrow">›</span></a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-section-title">Programmi e Funzionalità</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#"><span class="menu-icon">🎁</span>Buoni Regalo<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">⭐</span>Lista dei desideri<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">📦</span>I tuoi Ordini<span class="menu-arrow">›</span></a></li>
+                    <li><a href="{{ route('profilo') }}"><span class="menu-icon">👤</span>Il tuo Account<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">🔄</span>Resi e sostituzioni<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">🚚</span>Traccia il tuo pacco<span class="menu-arrow">›</span></a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-section-title">Aiuto e Impostazioni</h3>
+                <ul class="sidebar-menu">
+                    <li><a href="#"><span class="menu-icon">❓</span>Servizio Clienti<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">⚙️</span>Impostazioni<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">🔔</span>Notifiche<span class="menu-arrow">›</span></a></li>
+                    <li><a href="#"><span class="menu-icon">🌍</span>Italiano - IT<span class="menu-arrow">›</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="header-top">
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Menu">☰</button>
+            
             <a href="{{ route('home') }}" class="logo">amazon.it</a>
             
             <div class="location">
@@ -162,6 +212,38 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile Sidebar Toggle
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        const sidebarClose = document.getElementById('sidebarClose');
+
+        function openSidebar() {
+            mobileSidebar.classList.add('open');
+            sidebarOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSidebar() {
+            mobileSidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        if (hamburgerMenu) {
+            hamburgerMenu.addEventListener('click', openSidebar);
+        }
+
+        if (sidebarClose) {
+            sidebarClose.addEventListener('click', closeSidebar);
+        }
+
+        if (sidebarOverlay) {
+            sidebarOverlay.addEventListener('click', closeSidebar);
+        }
+    </script>
 
     @yield('scripts')
 </body>
