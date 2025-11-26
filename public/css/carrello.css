@@ -73,7 +73,7 @@ h1 {
 }
 
 .item-details h3:hover {
-    color: #c45500;
+    color: #C7511F;
     text-decoration: underline;
 }
 
@@ -159,7 +159,7 @@ h1 {
 }
 
 .item-actions button:hover {
-    color: #c45500;
+    color: #C7511F;
     text-decoration: underline;
 }
 
@@ -259,7 +259,7 @@ h1 {
 }
 
 .summary-total .amount {
-    color: #b12704;
+    color: #C7511F;
     font-size: 18px;
 }
 
@@ -273,26 +273,28 @@ h1 {
 
 .checkout-btn {
     width: 100%;
-    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
-    border: 1px solid #a88734;
+    background: linear-gradient(to bottom, #F7DFA5, #F0C14B);
+    border-top: 1px solid #A88734;
+    border-right: 1px solid #9C7E31;
+    border-bottom: 1px solid #846A29;
+    border-left: 1px solid #9C7E31;
     border-radius: 3px;
     padding: 8px;
     font-size: 13px;
     cursor: pointer;
     margin-top: 15px;
     font-weight: 400;
-    box-shadow: 0 1px 0 rgba(255,255,255,.4) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
     transition: background 0.1s, box-shadow 0.1s;
     color: #111;
 }
 
 .checkout-btn:hover {
-    background: linear-gradient(to bottom, #f5d78e, #eeb933);
-    border-color: #a88734;
+    background: linear-gradient(to bottom, #F5D78E, #EEB933);
 }
 
 .checkout-btn:active {
-    background: #f0c14b;
+    background: #F0C14B;
     box-shadow: 0 1px 3px rgba(0,0,0,.2) inset;
 }
 
@@ -367,26 +369,24 @@ h1 {
         gap: 16px;
     }
     
-    /* Summary mobile ottimizzato */
+    /* Summary mobile compatto Amazon style */
     .summary {
-        border-radius: 12px;
-        padding: 20px;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        border-radius: 8px;
+        padding: 16px;
+        position: static;
         background: #fff;
-        border: none;
-        border-top: 2px solid #e7e7e7;
-        box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
-        z-index: 100;
-        margin: 0;
+        border: 1px solid #d5d9d9;
+        box-shadow: 0 2px 5px rgba(213,217,217,.5);
+        margin: 0 0 16px 0;
         max-width: 100%;
-        border-radius: 20px 20px 0 0;
     }
     
     .summary h2 {
-        display: none;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: #0f1111;
+        display: block;
     }
     
     .summary-subtotal {
@@ -395,16 +395,17 @@ h1 {
     
     .summary-row {
         font-size: 14px;
-        padding: 8px 0;
+        padding: 6px 0;
         font-weight: 400;
+        color: #0f1111;
     }
     
     .summary-row .label {
-        color: #565959;
+        color: #0f1111;
     }
     
     .summary-row:last-of-type {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
     
     .summary-gift {
@@ -412,16 +413,17 @@ h1 {
     }
     
     .summary-total {
-        font-size: 20px;
-        margin-top: 0;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        border-top: 2px solid #e7e7e7;
+        font-size: 18px;
+        margin-top: 10px;
+        padding-top: 12px;
+        padding-bottom: 0;
+        border-top: 1px solid #e7e7e7;
         border-bottom: none;
-        background: #f7f8f8;
-        margin: 0 -20px 16px;
-        padding-left: 20px;
-        padding-right: 20px;
+        background: transparent;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -430,42 +432,43 @@ h1 {
     .summary-total span:first-child {
         font-weight: 700;
         color: #0f1111;
+        font-size: 18px;
     }
     
     .summary-total .amount {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 700;
-        color: #b12704;
+        color: #C7511F;
     }
     
     .summary-total .amount::before {
-        font-size: 14px;
-        top: -6px;
+        font-size: 12px;
+        top: -4px;
     }
     
     .checkout-btn {
-        padding: 14px;
-        font-size: 16px;
-        border-radius: 12px;
-        margin-top: 0;
-        font-weight: 600;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        padding: 11px;
+        font-size: 14px;
+        border-radius: 8px;
+        margin-top: 14px;
+        font-weight: 400;
         text-transform: none;
-        letter-spacing: 0.3px;
+        letter-spacing: normal;
+        width: 100%;
     }
     
     .checkout-btn:active {
-        transform: scale(0.98);
+        transform: none;
     }
     
-    /* Aggiungi spazio in fondo per il summary fisso */
+    /* Cart items senza padding extra */
     .cart-items {
-        padding-bottom: 220px;
+        padding-bottom: 0;
     }
     
     /* Cart items ottimizzati per mobile */
     .cart-items {
-        border-radius: 8px;
+        border-radius: 0;
         padding: 0;
         border: none;
         background: transparent;
@@ -473,13 +476,16 @@ h1 {
     
     .cart-item {
         background: #fff;
-        border: 1px solid #d5d9d9;
-        border-radius: 8px;
-        padding: 16px;
-        margin-bottom: 12px;
+        border: none;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0;
+        padding: 16px 12px;
+        margin-bottom: 8px;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 14px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
     }
     
     .cart-item:last-child {
@@ -489,15 +495,19 @@ h1 {
     /* Layout mobile: immagine + dettagli in riga, poi prezzo sotto */
     .cart-item-top {
         display: flex;
-        gap: 12px;
+        gap: 14px;
         align-items: start;
     }
     
     .item-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 8px;
+        width: 110px;
+        height: 110px;
+        border-radius: 4px;
         flex-shrink: 0;
+        border: 1px solid #e7e7e7;
+        object-fit: contain;
+        padding: 4px;
+        background: #fff;
     }
     
     .item-details {
@@ -506,34 +516,43 @@ h1 {
     }
     
     .item-details h3 {
-        font-size: 15px;
-        margin-bottom: 6px;
+        font-size: 16px;
+        margin-bottom: 8px;
         line-height: 1.3;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        font-weight: 400;
+        color: #0f1111;
+    }
+    
+    .item-details h3:active {
+        color: #C7511F;
     }
     
     .item-stock {
-        font-size: 11px;
-        margin: 4px 0;
+        font-size: 12px;
+        margin: 6px 0;
+        font-weight: 600;
     }
     
     .item-eligible {
-        font-size: 11px;
-        margin: 3px 0;
+        font-size: 12px;
+        margin: 4px 0;
+        font-weight: 400;
     }
     
     .item-details .price {
-        font-size: 18px;
-        margin: 6px 0 0;
+        font-size: 20px;
+        margin: 8px 0 0;
         font-weight: 700;
+        color: #C7511F;
     }
     
     .item-details .price::before {
-        font-size: 11px;
-        top: -5px;
+        font-size: 12px;
+        top: -6px;
     }
     
     /* Sezione inferiore con azioni e prezzo totale */
@@ -541,14 +560,16 @@ h1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 12px;
+        padding-top: 14px;
         border-top: 1px solid #e7e7e7;
         gap: 12px;
         flex-wrap: wrap;
     }
     
     .item-actions {
-        gap: 10px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
         margin-top: 0;
         flex: 1;
         min-width: 0;
@@ -558,55 +579,67 @@ h1 {
         display: none;
     }
     
+    .quantity-selector {
+        background: #f0f2f2;
+        border-radius: 8px;
+        padding: 2px;
+    }
+    
     .quantity-selector select {
-        padding: 9px 32px 9px 12px;
-        font-size: 14px;
-        border-radius: 20px;
-        background: #fff;
-        border: 1px solid #d5d9d9;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        padding: 8px 30px 8px 11px;
+        font-size: 13px;
+        border-radius: 8px;
+        background: #f0f2f2;
+        border: 1px solid #ADB1B8;
+        box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 1px 2px rgba(15,17,17,.15);
+        font-weight: 400;
+        color: #0f1111;
+    }
+    
+    .quantity-selector select:active {
+        background: #e7e9ec;
+        box-shadow: 0 1px 3px rgba(0,0,0,.2) inset;
     }
     
     .quantity-selector::after {
-        right: 12px;
-        font-size: 10px;
+        right: 11px;
+        font-size: 8px;
+        color: #0f1111;
     }
     
     .item-actions button {
-        font-size: 13px;
-        padding: 8px 12px;
-        border: 1px solid #d5d9d9;
-        border-radius: 20px;
-        background: #fff;
+        font-size: 12px;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: transparent;
         transition: all 0.15s;
+        font-weight: 400;
+        white-space: nowrap;
     }
     
     .item-actions button:active {
-        transform: scale(0.96);
-        background: #f7f7f7;
+        transform: none;
+        background: transparent;
+    }
+    
+    .item-actions button::before {
+        content: '|';
+        color: #ddd;
+        margin: 0 8px 0 0;
+    }
+    
+    .item-actions button:first-of-type::before {
+        content: '';
+        margin: 0;
     }
     
     .item-price {
-        text-align: right;
-        flex-shrink: 0;
-    }
-    
-    .item-price strong {
-        font-size: 20px;
-        font-weight: 700;
-        color: #b12704;
-    }
-    
-    .item-price strong::before {
-        font-size: 12px;
-        top: -6px;
+        display: none;
     }
     
     .item-price-label {
-        display: block;
-        font-size: 11px;
-        color: #565959;
-        margin-bottom: 2px;
+        display: none;
     }
     
     /* Empty cart mobile */

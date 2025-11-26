@@ -91,12 +91,12 @@
 }
 
 .category-card a::after {
-    content: ' →';
-    font-size: 14px;
+    content: '';
 }
 
 .category-card a:hover {
-    color: #c45500;
+    color: #C7511F;
+    text-decoration: underline;
 }
 
 /* Products Section */
@@ -191,7 +191,7 @@
 }
 
 .product-card h4:hover {
-    color: #c45500;
+    color: #C7511F;
 }
 
 .product-price {
@@ -231,7 +231,8 @@
 }
 
 .rating-count:hover {
-    color: #c45500;
+    color: #C7511F;
+    text-decoration: underline;
 }
 
 .product-prime {

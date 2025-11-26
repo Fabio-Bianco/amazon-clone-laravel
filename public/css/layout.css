@@ -22,7 +22,7 @@ main {
 
 /* ===== HEADER ===== */
 header {
-    background-color: #131921;
+    background-color: #131A22;
     color: #fff;
     padding: 8px 15px;
 }
@@ -274,7 +274,7 @@ header {
 }
 
 .search-bar:focus-within {
-    box-shadow: 0 0 0 3px #f90, 0 1px 1px rgba(0,0,0,.15);
+    box-shadow: 0 0 0 3px #F90, 0 0 0 4px rgba(255,153,0,0.3);
 }
 
 .search-category {
@@ -404,10 +404,11 @@ header {
     top: -2px;
     left: 14px;
     background: transparent;
-    color: #f08804;
+    color: #F08804;
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
 
 .cart-text {
@@ -545,6 +546,7 @@ footer {
 
 .footer-column a:hover {
     color: #fff;
+    text-decoration: underline;
 }
 
 .footer-bottom {
