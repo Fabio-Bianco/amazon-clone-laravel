@@ -258,9 +258,9 @@ This project demonstrates my ability to:
 - Deliver production-ready features
 
 ### 🔗 Connect
-- 💼 LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
+- 💼 LinkedIn: [Fabio Bianco](https://www.linkedin.com/in/fabio-bianco-008a0b118/)
 - 🐙 GitHub: [Fabio-Bianco](https://github.com/Fabio-Bianco)
-- 📧 Email: your.email@example.com
+- 📧 Email: biancofabio911@gmail.com
 
 ---
 
