@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index() {
+        $prodotti = config('data.prodotti.elettronica');
         
-        return view('homepage', );
+        return view('homepage', ['prodotti' => $prodotti]);
     }
 }

@@ -37,7 +37,7 @@ use Illuminate\Support\Facades\Route;
 // - Il secondo parametro passa i dati alla view come variabili disponibili nel template
 // - Nella view blade potrai usare direttamente {{ $info }}
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get("/profilo", [ProfiloController::class, 'index'])->name('profilo');
 
