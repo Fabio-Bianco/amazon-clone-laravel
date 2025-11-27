@@ -1,67 +1,69 @@
-# 🛒 Amazon.it Clone - Laravel E-commerce Platform
+# 🛒 Clone Amazon.it - Piattaforma E-commerce Laravel
 
 [![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php)](https://php.net)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-> **Pixel-perfect Amazon.it clone** built with Laravel, featuring responsive design, modern UI/UX patterns, and complete e-commerce functionality.
+> **Clone pixel-perfect di Amazon.it** realizzato con Laravel, con design responsive, pattern UI/UX moderni e funzionalità e-commerce complete.
+
+🌍 **[Read in English](README_EN.md)**
 
 ---
 
-## 🎯 Project Overview
+## 🎯 Panoramica del Progetto
 
-This project is a **high-fidelity recreation of Amazon.it**, developed as a full-stack e-commerce platform to demonstrate advanced web development skills. Every detail—from color codes to interaction patterns—has been carefully crafted to match Amazon's design system.
+Questo progetto è una **ricreazione ad alta fedeltà di Amazon.it**, sviluppata come piattaforma e-commerce full-stack per dimostrare competenze avanzate di sviluppo web. Ogni dettaglio—dai codici colore ai pattern di interazione—è stato accuratamente realizzato per corrispondere al design system di Amazon.
 
-### 🎨 Design Philosophy
+### 🎨 Filosofia di Design
 
-- **98% Amazon Fidelity**: Exact color palette (`#131A22`, `#C7511F`, `#F0C14B`)
-- **Mobile-First Approach**: Fully responsive from 320px to 4K displays
-- **Authentic UX Patterns**: Sticky headers, hamburger menus, touch-optimized controls
-- **Performance Optimized**: Lazy loading, optimized assets, smooth animations
+- **Fedeltà Amazon al 98%**: Palette colori esatta (`#131A22`, `#C7511F`, `#F0C14B`)
+- **Approccio Mobile-First**: Completamente responsive da 320px a display 4K
+- **Pattern UX Autentici**: Header sticky, menu hamburger, controlli ottimizzati per touch
+- **Ottimizzato per le Performance**: Lazy loading, asset ottimizzati, animazioni fluide
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
-### 🖥️ Desktop Experience
+### 🖥️ Esperienza Desktop
 
 #### Homepage
-![Homepage Desktop](screenshots/homepage-desktop.png)
-*Hero banner with category cards and featured products grid*
+![Homepage Desktop](screenshots/homepage.png)
+*Banner hero con card categorie e griglia prodotti in evidenza*
 
-#### Shopping Cart
-![Cart Desktop](screenshots/cart-desktop.png)
-*Clean cart interface with quantity selectors and price breakdown*
+#### Carrello
+![Carrello Desktop](screenshots/cart_desktop.png)
+*Interfaccia carrello pulita con selettori quantità e riepilogo prezzi*
 
-#### User Profile
-![Profile Desktop](screenshots/profile-desktop.png)
-*Account management with sidebar navigation and action cards*
+#### Profilo Utente
+![Profilo Desktop](screenshots/profile_desktop.png)
+*Gestione account con navigazione sidebar e card azioni*
 
 ---
 
-### 📱 Mobile Experience
+### 📱 Esperienza Mobile
 
 <table>
 <tr>
 <td width="33%">
 
-#### Mobile Header
-![Mobile Header](screenshots/mobile-header.png)
-*Sticky header with hamburger menu*
+#### Header Mobile
+![Header Mobile](screenshots/mobile_homepage.png)
+*Header sticky con menu hamburger*
 
 </td>
 <td width="33%">
 
-#### Hamburger Menu
-![Mobile Menu](screenshots/mobile-menu.png)
-*Slide-in navigation*
+#### Menu Hamburger
+![Menu Mobile](screenshots/homepage_2.png)
+*Navigazione slide-in*
 
 </td>
 <td width="33%">
 
-#### Mobile Cart
-![Mobile Cart](screenshots/mobile-cart.png)
-*Touch-optimized cart items*
+#### Carrello Mobile
+![Carrello Mobile](screenshots/mobile_cart.png)
+*Articoli carrello ottimizzati per touch*
 
 </td>
 </tr>
@@ -69,49 +71,49 @@ This project is a **high-fidelity recreation of Amazon.it**, developed as a full
 
 ---
 
-## ✨ Key Features
+## ✨ Caratteristiche Principali
 
-### 🎨 **Frontend Excellence**
-- **Pixel-Perfect UI**: Exact Amazon color codes, typography, and spacing
-- **Advanced CSS Grid/Flexbox**: Complex responsive layouts
-- **Custom Components**: Quantity selectors, rating stars, Prime badges
-- **Smooth Animations**: Hover states, active states, cubic-bezier transitions
-- **Mobile Gestures**: Touch-optimized scrolling, sticky elements
+### 🎨 **Eccellenza Frontend**
+- **UI Pixel-Perfect**: Codici colore, tipografia e spaziatura esatti di Amazon
+- **CSS Grid/Flexbox Avanzato**: Layout responsive complessi
+- **Componenti Custom**: Selettori quantità, stelle valutazione, badge Prime
+- **Animazioni Fluide**: Stati hover, stati attivi, transizioni cubic-bezier
+- **Gesture Mobile**: Scrolling ottimizzato per touch, elementi sticky
 
-### 🏗️ **Architecture**
-- **MVC Pattern**: Clean separation of concerns
-- **Blade Templating**: Reusable layouts and components
-- **RESTful Routes**: Named routes with Laravel routing
-- **Component-Based CSS**: Modular stylesheets (layout, homepage, cart, profile)
+### 🏗️ **Architettura**
+- **Pattern MVC**: Separazione netta delle responsabilità
+- **Blade Templating**: Layout e componenti riutilizzabili
+- **Route RESTful**: Route nominative con routing Laravel
+- **CSS Component-Based**: Fogli di stile modulari (layout, homepage, carrello, profilo)
 
-### 📱 **Responsive Design**
-- **7 Breakpoints**: 400px, 600px, 768px, 900px, 1024px, 1200px, 1400px
-- **Mobile-First CSS**: Progressive enhancement approach
-- **Touch-Friendly**: 44px minimum touch targets (iOS guidelines)
-- **Adaptive Layouts**: Grid columns adjust fluidly
+### 📱 **Design Responsive**
+- **7 Breakpoint**: 400px, 600px, 768px, 900px, 1024px, 1200px, 1400px
+- **CSS Mobile-First**: Approccio progressive enhancement
+- **Touch-Friendly**: Target touch minimi di 44px (linee guida iOS)
+- **Layout Adattivi**: Colonne griglia che si adattano fluidamente
 
-### 🎯 **UX Patterns**
-- **Hamburger Menu**: Slide-in sidebar with overlay
-- **Sticky Elements**: Header (z-index: 1000), sidebar navigation
-- **Micro-interactions**: Button scales, link underlines, shadows
-- **Amazon Cart Badge**: Transparent background with shadow
-
----
-
-## 🛠️ Tech Stack
-
-| Technology | Purpose |
-|------------|---------|
-| **Laravel 11.x** | Backend framework (MVC, routing, Blade) |
-| **PHP 8.2+** | Server-side logic |
-| **Blade Templates** | View layer with inheritance |
-| **Vanilla CSS3** | Custom styling (Grid, Flexbox, animations) |
-| **JavaScript (ES6+)** | Sidebar toggle, interactive elements |
-| **Unsplash API** | Product placeholder images |
+### 🎯 **Pattern UX**
+- **Menu Hamburger**: Sidebar slide-in con overlay
+- **Elementi Sticky**: Header (z-index: 1000), navigazione sidebar
+- **Micro-interazioni**: Scale pulsanti, sottolineature link, ombre
+- **Badge Carrello Amazon**: Sfondo trasparente con ombra
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Stack Tecnologico
+
+| Tecnologia | Scopo |
+|------------|-------|
+| **Laravel 11.x** | Framework backend (MVC, routing, Blade) |
+| **PHP 8.2+** | Logica server-side |
+| **Blade Templates** | Layer view con ereditarietà |
+| **Vanilla CSS3** | Styling custom (Grid, Flexbox, animazioni) |
+| **JavaScript (ES6+)** | Toggle sidebar, elementi interattivi |
+| **Unsplash API** | Immagini placeholder prodotti |
+
+---
+
+## 📂 Struttura del Progetto
 
 ```
 laravel-esercitazione/
@@ -120,167 +122,167 @@ laravel-esercitazione/
 │   ├── CartController.php
 │   └── ProfiloController.php
 ├── resources/views/
-│   ├── layouts/app.blade.php      # Master layout
+│   ├── layouts/app.blade.php      # Layout master
 │   ├── homepage.blade.php         # Landing page
-│   ├── carrello.blade.php         # Shopping cart
-│   └── profilo.blade.php          # User profile
+│   ├── carrello.blade.php         # Carrello acquisti
+│   └── profilo.blade.php          # Profilo utente
 ├── public/css/
 │   ├── layout.css                 # Header, nav, footer
-│   ├── homepage.css               # Homepage styles
-│   ├── carrello.css               # Cart styles
-│   └── profilo.css                # Profile styles
-└── routes/web.php                 # Application routes
+│   ├── homepage.css               # Stili homepage
+│   ├── carrello.css               # Stili carrello
+│   └── profilo.css                # Stili profilo
+└── routes/web.php                 # Route applicazione
 ```
 
 ---
 
-## 🚀 Installation & Setup
+## 🚀 Installazione e Setup
 
-### Prerequisites
+### Prerequisiti
 - PHP 8.2+
 - Composer
 - Node.js & NPM
 
-### Quick Start
+### Avvio Rapido
 
 ```bash
-# Clone repository
+# Clona repository
 git clone https://github.com/Fabio-Bianco/laravel-esercitazione.git
 cd laravel-esercitazione
 
-# Install dependencies
+# Installa dipendenze
 composer install
 
-# Environment setup
+# Setup ambiente
 cp .env.example .env
 php artisan key:generate
 
-# Start development server
+# Avvia server di sviluppo
 php artisan serve
 ```
 
-Visit `http://localhost:8000`
+Visita `http://localhost:8000`
 
 ---
 
 ## 🎨 Design System
 
-### Color Palette (Amazon Official)
+### Palette Colori (Amazon Ufficiale)
 ```css
-/* Primary Colors */
+/* Colori Primari */
 --amazon-header: #131A22;
 --amazon-nav: #232F3E;
 --amazon-orange: #FF9900;
 --amazon-yellow: #F0C14B;
 
-/* Interactive Colors */
+/* Colori Interattivi */
 --link-blue: #007185;
 --link-hover: #C7511F;
 --success-green: #007600;
 
-/* Neutral Colors */
+/* Colori Neutri */
 --text-primary: #0F1111;
 --border-gray: #D5D9D9;
 --background-gray: #EAEDED;
 ```
 
-### Typography
+### Tipografia
 - **Font**: Amazon Ember (fallback: Arial)
-- **Base Size**: 14px
-- **Headings**: 18px - 32px
+- **Dimensione Base**: 14px
+- **Intestazioni**: 18px - 32px
 
 ---
 
-## 📱 Responsive Breakpoints
+## 📱 Breakpoint Responsive
 
-| Breakpoint | Width | Layout |
-|------------|-------|--------|
-| **Mobile Small** | ≤400px | 1 column |
-| **Mobile** | ≤600px | Hamburger menu |
-| **Tablet Portrait** | ≤768px | 2 columns |
-| **Tablet Landscape** | ≤1024px | 3 columns |
-| **Desktop** | ≤1400px | 4-6 columns |
-
----
-
-## 🎯 Key Learning Outcomes
-
-### Frontend Skills
-✅ Pixel-perfect UI implementation  
-✅ Advanced CSS Grid & Flexbox  
-✅ Mobile-first responsive design  
-✅ Performance optimization  
-
-### Backend Skills
-✅ Laravel MVC architecture  
-✅ Blade templating engine  
-✅ RESTful routing patterns  
-✅ Code modularity  
-
-### UX/UI Design
-✅ Amazon design system mastery  
-✅ Touch-optimized interfaces  
-✅ Micro-interaction design  
-✅ Visual hierarchy  
+| Breakpoint | Larghezza | Layout |
+|------------|-----------|--------|
+| **Mobile Piccolo** | ≤400px | 1 colonna |
+| **Mobile** | ≤600px | Menu hamburger |
+| **Tablet Portrait** | ≤768px | 2 colonne |
+| **Tablet Landscape** | ≤1024px | 3 colonne |
+| **Desktop** | ≤1400px | 4-6 colonne |
 
 ---
 
-## 🔮 Future Enhancements
+## 🎯 Competenze Acquisite
 
-- [ ] MySQL database integration
-- [ ] User authentication (Laravel Breeze)
-- [ ] Shopping cart session logic
-- [ ] Product search functionality
-- [ ] Payment gateway (Stripe)
-- [ ] Admin panel
-- [ ] RESTful API
-- [ ] Unit/Feature testing
+### Competenze Frontend
+✅ Implementazione UI pixel-perfect  
+✅ CSS Grid & Flexbox avanzato  
+✅ Design responsive mobile-first  
+✅ Ottimizzazione performance  
+
+### Competenze Backend
+✅ Architettura MVC Laravel  
+✅ Motore templating Blade  
+✅ Pattern routing RESTful  
+✅ Modularità del codice  
+
+### Design UX/UI
+✅ Padronanza design system Amazon  
+✅ Interfacce ottimizzate per touch  
+✅ Design micro-interazioni  
+✅ Gerarchia visiva  
 
 ---
 
-## 👨‍💻 About the Developer
+## 🔮 Sviluppi Futuri
+
+- [ ] Integrazione database MySQL
+- [ ] Autenticazione utenti (Laravel Breeze)
+- [ ] Logica sessione carrello
+- [ ] Funzionalità ricerca prodotti
+- [ ] Gateway pagamento (Stripe)
+- [ ] Pannello admin
+- [ ] API RESTful
+- [ ] Testing Unit/Feature
+
+---
+
+## 👨‍💻 Informazioni sullo Sviluppatore
 
 **Fabio Bianco** - Full-Stack Web Developer
 
-This project demonstrates my ability to:
-- Reverse-engineer complex UIs with extreme attention to detail
-- Build responsive, mobile-first applications
-- Write clean, maintainable code
-- Deliver production-ready features
+Questo progetto dimostra la mia capacità di:
+- Effettuare reverse-engineering di UI complesse con estrema attenzione ai dettagli
+- Costruire applicazioni responsive mobile-first
+- Scrivere codice pulito e manutenibile
+- Rilasciare funzionalità production-ready
 
-### 🔗 Connect
-- 💼 LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
+### 🔗 Contatti
+- 💼 LinkedIn: [Il Tuo Profilo](https://linkedin.com/in/your-profile)
 - 🐙 GitHub: [Fabio-Bianco](https://github.com/Fabio-Bianco)
 - 📧 Email: your.email@example.com
 
 ---
 
-## 📄 License
+## 📄 Licenza
 
-MIT License - see [LICENSE](LICENSE)
+Licenza MIT - vedi [LICENSE](LICENSE)
 
 ---
 
-## 📝 Notes for Recruiters
+## 📝 Note per i Recruiter
 
-**Key Highlights:**
+**Punti Chiave:**
 
-1. **Attention to Detail**: 98% fidelity to Amazon.it design system
-2. **Responsive Mastery**: 7 breakpoints with fluid layouts
-3. **Clean Code**: Well-organized, modular, maintainable
-4. **Modern Practices**: MVC, component-based CSS, semantic HTML
-5. **Problem-Solving**: Complex UI challenges with vanilla CSS/JS
+1. **Attenzione ai Dettagli**: Fedeltà al 98% al design system Amazon.it
+2. **Padronanza Responsive**: 7 breakpoint con layout fluidi
+3. **Codice Pulito**: Ben organizzato, modulare, manutenibile
+4. **Pratiche Moderne**: MVC, CSS component-based, HTML semantico
+5. **Problem-Solving**: Sfide UI complesse con CSS/JS vanilla
 
-**Time Investment**: ~40 hours (analysis, implementation, testing)
+**Investimento Temporale**: ~40 ore (analisi, implementazione, testing)
 
-**Key Achievement**: Pixel-perfect Amazon clone without design frameworks
+**Risultato Chiave**: Clone pixel-perfect di Amazon senza framework di design
 
 ---
 
 <div align="center">
 
-### ⭐ Star this repo if you found it useful!
+### ⭐ Metti una stella a questo repo se l'hai trovato utile!
 
-Made with ❤️ by [Fabio Bianco](https://github.com/Fabio-Bianco)
+Fatto con ❤️ da [Fabio Bianco](https://github.com/Fabio-Bianco)
 
 </div>
