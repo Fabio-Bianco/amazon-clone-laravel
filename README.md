@@ -270,22 +270,6 @@ Licenza MIT - vedi [LICENSE](LICENSE)
 
 ---
 
-## 📝 Note per i Recruiter
-
-**Punti Chiave:**
-
-1. **Attenzione ai Dettagli**: Fedeltà al 98% al design system Amazon.it
-2. **Padronanza Responsive**: 7 breakpoint con layout fluidi
-3. **Codice Pulito**: Ben organizzato, modulare, manutenibile
-4. **Pratiche Moderne**: MVC, CSS component-based, HTML semantico
-5. **Problem-Solving**: Sfide UI complesse con CSS/JS vanilla
-
-**Investimento Temporale**: ~40 ore (analisi, implementazione, testing)
-
-**Risultato Chiave**: Clone pixel-perfect di Amazon senza framework di design
-
----
-
 <div align="center">
 
 ### ⭐ Metti una stella a questo repo se l'hai trovato utile!

@@ -270,22 +270,6 @@ MIT License - see [LICENSE](LICENSE)
 
 ---
 
-## 📝 Notes for Recruiters
-
-**Key Highlights:**
-
-1. **Attention to Detail**: 98% fidelity to Amazon.it design system
-2. **Responsive Mastery**: 7 breakpoints with fluid layouts
-3. **Clean Code**: Well-organized, modular, maintainable
-4. **Modern Practices**: MVC, component-based CSS, semantic HTML
-5. **Problem-Solving**: Complex UI challenges with vanilla CSS/JS
-
-**Time Investment**: ~40 hours (analysis, implementation, testing)
-
-**Key Achievement**: Pixel-perfect Amazon clone without design frameworks
-
----
-
 <div align="center">
 
 ### ⭐ Star this repo if you found it useful!
